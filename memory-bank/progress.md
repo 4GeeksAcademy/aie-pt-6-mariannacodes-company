@@ -9,7 +9,8 @@
 - `AGENTS.md` documenta el orden de lectura al inicio de sesión y el flujo previo al commit (`AGENTS.md`, `1ba62cc`).
 - Regla de fuentes para el memory-bank creada (`.agents/rules/memory-bank-sources.md`, `b189df8`).
 - Skill `update-progress` creada (`.agents/skills/update-progress/SKILL.md`, `ace476b`).
-- Repositorio en rama `feature/agent-memory-bank` (HEAD en `ace476b`).
+- Actualización anterior de `memory-bank/progress.md` registrada (`memory-bank/progress.md`, `65f4c4e`).
+- Repositorio en rama `feature/agent-memory-bank` (HEAD en `65f4c4e`).
 - Este `memory-bank/` (projectbrief, techContext, progress) creado (`memory-bank/projectbrief.md`, `memory-bank/techContext.md`, `memory-bank/progress.md`; `114f522`).
 
 ## Pendiente / problemas detectados

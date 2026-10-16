@@ -16,7 +16,8 @@ Se distingue lo **confirmado en el repo** (hecho verificable en los archivos) de
 - Devcontainer presente: `.devcontainer/devcontainer.json` (base Ubuntu 24.04, Python 3.12 con JupyterLab, Node 22, CLI de GitHub, docker-outside-of-docker) (`.devcontainer/devcontainer.json:1-7`).
 - El repo no trae apps ejecutables ni scripts globales; solo estructura y documentación (`README.md:54-58`).
 - **No existe `docker-compose.yml`** en la raíz ❓ (el README lo lista como orquestación local esperada — `README.md:59-61` — pero el archivo no está presente).
-- **No existe `AGENTS.md`** en la raíz (`README.md:57`).
+- `AGENTS.md` existe en la raíz (`AGENTS.md`, commit `1ba62cc`).
+- `.agents/` contiene la regla `memory-bank-sources` (`.agents/rules/memory-bank-sources.md`, commit `b189df8`) y la skill `update-progress` (`.agents/skills/update-progress/SKILL.md`, commit `ace476b`).
 
 ## Recomendado, aún no implementado
 
