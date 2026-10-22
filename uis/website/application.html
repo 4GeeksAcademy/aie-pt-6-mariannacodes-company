@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Regístrate en Brasa Points y empieza a disfrutar beneficios en Brasaland.">
+    <title>Únete a Brasa Points | Brasaland</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="validation.js" defer></script>
+</head>
+<body class="bg-[#FFF7E8] text-[#3B2416] antialiased">
+    <header class="border-b border-white/10 bg-[#3B2416] text-white">
+        <div class="mx-auto flex max-w-7xl items-center justify-between px-5 py-5 sm:px-8 lg:px-10">
+            <a class="text-2xl font-black tracking-tight" href="index.html#inicio" aria-label="Brasaland, inicio">Brasaland</a>
+            <nav aria-label="Navegación principal" class="hidden items-center gap-6 text-sm font-semibold md:flex">
+                <a class="transition hover:text-[#F2C94C]" href="index.html#inicio">Inicio</a>
+                <a class="transition hover:text-[#F2C94C]" href="index.html#historia">Nuestra historia</a>
+                <a class="transition hover:text-[#F2C94C]" href="index.html#diferenciales">Lo que nos hace únicos</a>
+                <a class="transition hover:text-[#F2C94C]" href="index.html#ubicaciones">Ubicaciones</a>
+                <a class="transition hover:text-[#F2C94C]" href="index.html#brasa-points">Brasa Points</a>
+                <a class="transition hover:text-[#F2C94C]" href="index.html#contacto">Contacto</a>
+            </nav>
+            <a class="rounded-full border border-[#F2C94C] px-4 py-2 text-sm font-bold text-[#F2C94C] transition hover:bg-[#F2C94C] hover:text-[#3B2416] md:hidden" href="index.html#inicio">Inicio</a>
+        </div>
+    </header>
+
+    <main>
+        <section class="bg-[#14532D] px-5 py-14 text-white sm:px-8 sm:py-20 lg:px-10">
+            <div class="mx-auto max-w-7xl">
+                <p class="text-sm font-bold uppercase tracking-[0.2em] text-[#F2C94C]">Brasa Points</p>
+                <h1 class="mt-4 max-w-3xl text-4xl font-black leading-tight sm:text-5xl">Tu próxima recompensa empieza aquí</h1>
+                <p class="mt-5 max-w-2xl text-lg leading-8 text-white/85">Regístrate y acumula puntos con cada visita a Brasaland.</p>
+            </div>
+        </section>
+
+        <section class="mx-auto max-w-4xl px-5 py-12 sm:px-8 sm:py-16">
+            <div class="mb-8">
+                <h2 class="text-2xl font-black sm:text-3xl">Crea tu cuenta</h2>
+                <p class="mt-2 leading-7 text-[#3B2416]/75">Los campos marcados con * son obligatorios. Debes ser mayor de 18 años para registrarte.</p>
+            </div>
+
+            <form id="brasaPointsForm" novalidate class="space-y-10">
+                <fieldset class="space-y-5 border-t border-[#3B2416]/20 pt-6">
+                    <legend class="px-2 text-xl font-extrabold">Datos personales</legend>
+                    <div class="grid gap-5 sm:grid-cols-2">
+                        <div class="sm:col-span-2">
+                            <label for="fullName" class="mb-2 block font-bold">Nombre completo *</label>
+                            <input id="fullName" name="fullName" type="text" required autocomplete="name" aria-describedby="fullName-error" aria-invalid="false" class="block w-full rounded-xl border border-[#3B2416]/25 bg-white px-4 py-3 focus:border-[#14532D] focus:outline-none focus:ring-2 focus:ring-[#14532D]/25">
+                            <p id="fullName-error" role="alert" hidden class="mt-2 text-sm font-semibold text-red-700"></p>
+                        </div>
+                        <div>
+                            <label for="email" class="mb-2 block font-bold">Email *</label>
+                            <input id="email" name="email" type="email" required autocomplete="email" aria-describedby="email-error" aria-invalid="false" class="block w-full rounded-xl border border-[#3B2416]/25 bg-white px-4 py-3 focus:border-[#14532D] focus:outline-none focus:ring-2 focus:ring-[#14532D]/25">
+                            <p id="email-error" role="alert" hidden class="mt-2 text-sm font-semibold text-red-700"></p>
+                        </div>
+                        <div>
+                            <label for="phone" class="mb-2 block font-bold">Teléfono *</label>
+                            <input id="phone" name="phone" type="tel" required autocomplete="tel" aria-describedby="phone-error" aria-invalid="false" class="block w-full rounded-xl border border-[#3B2416]/25 bg-white px-4 py-3 focus:border-[#14532D] focus:outline-none focus:ring-2 focus:ring-[#14532D]/25">
+                            <p id="phone-error" role="alert" hidden class="mt-2 text-sm font-semibold text-red-700"></p>
+                        </div>
+                        <div>
+                            <label for="birthDate" class="mb-2 block font-bold">Fecha de nacimiento *</label>
+                            <input id="birthDate" name="birthDate" type="date" required autocomplete="bday" aria-describedby="birthDate-error" aria-invalid="false" class="block w-full rounded-xl border border-[#3B2416]/25 bg-white px-4 py-3 focus:border-[#14532D] focus:outline-none focus:ring-2 focus:ring-[#14532D]/25">
+                            <p id="birthDate-error" role="alert" hidden class="mt-2 text-sm font-semibold text-red-700"></p>
+                        </div>
+                        <div>
+                            <label for="referralSource" class="mb-2 block font-bold">¿Cómo nos conociste? *</label>
+                            <select id="referralSource" name="referralSource" required aria-describedby="referralSource-error" aria-invalid="false" class="block w-full rounded-xl border border-[#3B2416]/25 bg-white px-4 py-3 focus:border-[#14532D] focus:outline-none focus:ring-2 focus:ring-[#14532D]/25">
+                                <option value="">Selecciona una opción</option>
+                                <option value="redes-sociales">Redes sociales</option>
+                                <option value="recomendacion">Recomendación</option>
+                                <option value="pasando-por-el-local">Pasando por el local</option>
+                                <option value="busqueda-en-internet">Búsqueda en internet</option>
+                                <option value="otro">Otro</option>
+                            </select>
+                            <p id="referralSource-error" role="alert" hidden class="mt-2 text-sm font-semibold text-red-700"></p>
+                        </div>
+                    </div>
+                </fieldset>
+
+                <fieldset class="space-y-5 border-t border-[#3B2416]/20 pt-6">
+                    <legend class="px-2 text-xl font-extrabold">Ubicación</legend>
+                    <div class="grid gap-5 sm:grid-cols-2">
+                        <div>
+                            <label for="country" class="mb-2 block font-bold">País *</label>
+                            <select id="country" name="country" required autocomplete="country-name" aria-describedby="country-error" aria-invalid="false" class="block w-full rounded-xl border border-[#3B2416]/25 bg-white px-4 py-3 focus:border-[#14532D] focus:outline-none focus:ring-2 focus:ring-[#14532D]/25">
+                                <option value="">Selecciona tu país</option>
+                                <option value="colombia">Colombia</option>
+                                <option value="estados-unidos">Estados Unidos</option>
+                            </select>
+                            <p id="country-error" role="alert" hidden class="mt-2 text-sm font-semibold text-red-700"></p>
+                        </div>
+                        <div>
+                            <label for="city" class="mb-2 block font-bold">Ciudad *</label>
+                            <select id="city" name="city" required autocomplete="address-level2" aria-describedby="city-error" aria-invalid="false" disabled class="block w-full rounded-xl border border-[#3B2416]/25 bg-white px-4 py-3 disabled:cursor-not-allowed disabled:bg-[#3B2416]/5 disabled:text-[#3B2416]/50 focus:border-[#14532D] focus:outline-none focus:ring-2 focus:ring-[#14532D]/25">
+                                <option value="">Selecciona una ciudad</option>
+                            </select>
+                            <p id="city-error" role="alert" hidden class="mt-2 text-sm font-semibold text-red-700"></p>
+                        </div>
+                        <div class="sm:col-span-2">
+                            <label for="favoriteLocation" class="mb-2 block font-bold">Ubicación favorita de Brasaland</label>
+                            <select id="favoriteLocation" name="favoriteLocation" aria-describedby="favoriteLocation-error" aria-invalid="false" disabled class="block w-full rounded-xl border border-[#3B2416]/25 bg-white px-4 py-3 disabled:cursor-not-allowed disabled:bg-[#3B2416]/5 disabled:text-[#3B2416]/50 focus:border-[#14532D] focus:outline-none focus:ring-2 focus:ring-[#14532D]/25">
+                                <option value="">Selecciona una ubicación</option>
+                            </select>
+                            <p id="favoriteLocation-error" role="alert" hidden class="mt-2 text-sm font-semibold text-red-700"></p>
+                        </div>
+                    </div>
+                </fieldset>
+
+                <fieldset class="space-y-4 border-t border-[#3B2416]/20 pt-6">
+                    <legend class="px-2 text-xl font-extrabold">Preferencias alimentarias</legend>
+                    <p class="text-sm text-[#3B2416]/70">Selecciona todas las opciones que correspondan.</p>
+                    <div class="grid gap-3 sm:grid-cols-2">
+                        <label for="diet-sin-restricciones" class="flex items-center gap-3 rounded-lg border border-[#3B2416]/15 bg-white px-4 py-3 font-medium">
+                            <input id="diet-sin-restricciones" name="dietaryPreferences[]" type="checkbox" value="sin-restricciones" aria-describedby="dietaryPreferences-error" aria-invalid="false" class="h-5 w-5 rounded accent-[#C2410C]">
+                            Sin restricciones
+                        </label>
+                        <label for="diet-vegetariano" class="flex items-center gap-3 rounded-lg border border-[#3B2416]/15 bg-white px-4 py-3 font-medium">
+                            <input id="diet-vegetariano" name="dietaryPreferences[]" type="checkbox" value="vegetariano" aria-describedby="dietaryPreferences-error" aria-invalid="false" class="h-5 w-5 rounded accent-[#C2410C]">
+                            Vegetariano
+                        </label>
+                        <label for="diet-sin-gluten" class="flex items-center gap-3 rounded-lg border border-[#3B2416]/15 bg-white px-4 py-3 font-medium">
+                            <input id="diet-sin-gluten" name="dietaryPreferences[]" type="checkbox" value="sin-gluten" aria-describedby="dietaryPreferences-error" aria-invalid="false" class="h-5 w-5 rounded accent-[#C2410C]">
+                            Sin gluten
+                        </label>
+                        <label for="diet-otro" class="flex items-center gap-3 rounded-lg border border-[#3B2416]/15 bg-white px-4 py-3 font-medium">
+                            <input id="diet-otro" name="dietaryPreferences[]" type="checkbox" value="otro" aria-describedby="dietaryPreferences-error" aria-invalid="false" class="h-5 w-5 rounded accent-[#C2410C]">
+                            Otro
+                        </label>
+                    </div>
+                    <p id="dietaryPreferences-error" role="alert" hidden class="text-sm font-semibold text-red-700"></p>
+                </fieldset>
+
+                <fieldset class="space-y-4 border-t border-[#3B2416]/20 pt-6">
+                    <legend class="px-2 text-xl font-extrabold">Consentimientos</legend>
+                    <div>
+                        <label for="terms" class="flex items-start gap-3 font-medium">
+                            <input id="terms" name="terms" type="checkbox" value="acepto" required aria-describedby="terms-error" aria-invalid="false" class="mt-1 h-5 w-5 shrink-0 rounded accent-[#C2410C]">
+                            <span>Acepto los términos del programa Brasa Points *</span>
+                        </label>
+                        <p id="terms-error" role="alert" hidden class="mt-2 text-sm font-semibold text-red-700"></p>
+                    </div>
+                    <div>
+                        <label for="marketingOptIn" class="flex items-start gap-3 font-medium">
+                            <input id="marketingOptIn" name="marketingOptIn" type="checkbox" value="si" aria-describedby="marketingOptIn-error" aria-invalid="false" class="mt-1 h-5 w-5 shrink-0 rounded accent-[#C2410C]">
+                            <span>Quiero recibir ofertas por email</span>
+                        </label>
+                        <p id="marketingOptIn-error" role="alert" hidden class="mt-2 text-sm font-semibold text-red-700"></p>
+                    </div>
+                </fieldset>
+
+            <div class=" flex flex-col gap-3 sm:flex-row sm:gap-4">
+                <button type="submit" class="inline-flex items-center rounded-full bg-[#3B2416] px-7 py-3.5 font-extrabold text-white transition hover:bg-[#7C2D12] focus:outline-none focus:ring-4 focus:ring-[#3B2416]/30">Enviar</button>
+                <button id="clearForm" type="button" form="brasaPointsForm" class="ml-3 inline-flex items-center rounded-full border border-[#3B2416]/30 px-7 py-3.5 font-extrabold text-[#3B2416] transition hover:bg-[#3B2416]/5 focus:outline-none focus:ring-4 focus:ring-[#3B2416]/20">Limpiar</button>
+            </div>
+        </form>
+
+            <div id="successMessage" role="status" aria-live="polite" hidden class="mt-8 border-l-4 border-[#14532D] bg-white px-6 py-6">
+                <h2 id="successTitle" class="text-2xl font-black text-[#14532D]"></h2>
+                <p id="successBody" class="mt-3 leading-7"></p>
+                <p id="successClosing" class="mt-3 font-semibold"></p>
+            </div>
+        </section>
+    </main>
+
+    <footer id="contacto" class="bg-[#3B2416] text-white">
+        <div class="mx-auto grid max-w-7xl gap-10 px-5 py-14 sm:px-8 lg:grid-cols-[1fr_auto] lg:px-10">
+            <div>
+                <p class="text-3xl font-black">Brasaland</p>
+                <p class="mt-3 max-w-sm leading-7 text-white/70">El sabor de la brasa, en cada bocado.</p>
+                <a class="mt-6 inline-block font-semibold text-[#F2C94C] hover:text-white" href="mailto:hola@brasaland.com">hola@brasaland.com</a>
+            </div>
+            <div class="grid gap-6 sm:grid-cols-2">
+                <div>
+                    <p class="font-bold text-[#F2C94C]">Llámanos</p>
+                    <a class="mt-3 block text-white/80 hover:text-white" href="tel:+5741234567">Colombia: +57 4 123 4567</a>
+                    <a class="mt-2 block text-white/80 hover:text-white" href="tel:+13051234567">Florida: +1 305 123 4567</a>
+                </div>
+                <div>
+                    <p class="font-bold text-[#F2C94C]">Síguenos</p>
+                    <div class="mt-3 flex gap-4">
+                        <a class="text-white/80 hover:text-white" href="https://instagram.com/brasaland">Instagram</a>
+                        <a class="text-white/80 hover:text-white" href="https://facebook.com/brasaland">Facebook</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="border-t border-white/10">
+            <div class="mx-auto max-w-7xl px-5 py-5 text-sm text-white/60 sm:px-8 lg:px-10">© 2025 Brasaland. Todos los derechos reservados.</div>
+        </div>
+    </footer>
+</body>
+</html>
